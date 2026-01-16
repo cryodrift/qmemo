@@ -1,0 +1,13 @@
+<!--WARNING this is not used-->
+<div id="ce-editor-tabs" class="g-fr g-p1c g-phc" data-tab-class="g-dn" data-click="/tablisttools.js">
+    <button class="g-b2 g-bb g-btr" data-active-classes="g-b g-mb-1 g-active" data-click="tabs|ce-tab-hist|ce-tab-tags|ce-tab-attr|ce-tab-multi|ce-tab-tools|ce-tab-files" type="button">History</button>
+    <button class="g-b2 g-bb g-btr" data-active-classes="g-b g-mb-1 g-active" data-click="tabs|ce-tab-tags|ce-tab-hist|ce-tab-attr|ce-tab-multi|ce-tab-tools|ce-tab-files" type="button">Tags</button>
+    <button class="g-b2 g-bb g-btr" data-active-classes="g-b g-mb-1 g-active" data-click="tabs|ce-tab-attr|ce-tab-hist|ce-tab-tags|ce-tab-multi|ce-tab-tools|ce-tab-files" type="button">Attributes</button>
+    <button class="g-b2 g-bb g-btr" data-active-classes="g-b g-mb-1 g-active" data-click="tabs|ce-tab-multi|ce-tab-hist|ce-tab-tags|ce-tab-attr|ce-tab-tools|ce-tab-files" type="button">Multi</button>
+    <button class="g-b2 g-bb g-btr" data-active-classes="g-b g-mb-1 g-active" data-click="tabs|ce-tab-tools|ce-tab-hist|ce-tab-tags|ce-tab-attr|ce-tab-multi|ce-tab-files" type="button">Tools</button>
+    <button class="g-b2 g-bb g-btr" data-active-classes="g-b g-mb-1 g-active" data-click="tabs|ce-tab-files|ce-tab-hist|ce-tab-tags|ce-tab-attr|ce-tab-multi|ce-tab-tools" type="button">Files</button>
+</div>
+<script type="module">
+   import {restoreTab} from '/tablisttools.js';
+   restoreTab('ce-editor-tabs')
+</script>
