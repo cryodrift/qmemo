@@ -1,0 +1,20 @@
+<div class="g-fc g-h">
+    <div class="{{g-header}} g-tusn">
+        <div class="g-fm g-fw">{{@file@}}qmemo/ui/memo/header.html{{@file@}}</div>
+        <div class="g-bc g-btrc g-bbrc g-p1c g-fr">
+            {{@}}topbuttons{{@}}
+            {{@}}topbuttons{{@}}
+        </div>
+    </div>
+    <div id="memo_cont" class="{{g-container-full}}">
+        <div class="g-fg g-oa g-tp g-p1 g-b g-bt g-bb">{{content}}</div>
+        <div class="{{g-body}}">
+            <div class="g-c">{{@file@}}qmemo/ui/memo/footer.html{{@file@}}</div>
+            <button id="{{apiname}}" class="g-b g-bbr g-btr g-p1" href="{{ROUTE}}/{{query}}" data-loader="{{apiname}}|memo memos" data-loader-method="post">{{modevalue}}</button>
+        </div>
+    </div>
+    <div id="memo_files" class="{{g-container-full}} g-dh">
+    </div>
+    <div id="memo_memos" class="{{g-container-full}} g-dh">
+    </div>
+</div>

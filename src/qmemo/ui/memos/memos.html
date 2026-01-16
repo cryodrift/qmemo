@@ -1,0 +1,20 @@
+<a class="separator g-dvh" id="memos_page-{{memos_page}}" data-scrollable-page="{{memos_page}}">Page {{memos_page}}</a>
+{{@}}memos_block{{@}}
+<div id="memo{{id}}" class="g-mc1 g-mrc g-mlc g-mbc">
+
+    <div class="{{g-row}} g-tusn g-pb g-pr g-pt">
+        <div class="g-tbw g-fm g-fw g-c" data-click="togglenextparent toggleclass|parent|g-bbr">{{@file@}}qmemo/ui/memo/header.html{{@file@}}</div>
+        <div class="{{g-buttons}}">
+            {{memo_add_rem_btn}}
+            <a class="{{g-button}}" href="{{ROUTE}}/{{query}}" data-loader="memos files memo insert files_search">Show</a>
+        </div>
+    </div>
+
+    <div class="g-dh g-mt">
+        <pre class="g-b g-bt g-bb g-p1" data-loader="memo_content|self|outer" data-loader-url="{{ROUTE}}/{{query}}">{{shortcontent}}</pre>
+        <div class="{{g-footer}}">
+            <div class="">{{@file@}}qmemo/ui/memo/footer.html{{@file@}}</div>
+        </div>
+    </div>
+</div>
+{{@}}memos_block{{@}}
