@@ -24,13 +24,13 @@ class Web implements Handler
     protected Context $ctx;
     protected string $rootdir;
 
-    public function __construct(protected Repository $db, string $storagedir, protected Config $config, Context $ctx, protected \cryodrift\uploader\Api $uploader, protected \cryodrift\files\Web $files, protected string $templatedir_shared)
+    public function __construct(protected Repository $db, string $storagedir, protected Config $config, Context $ctx, protected \cryodrift\uploader\Api $uploader, protected \cryodrift\files\Web $files, protected string $templatedir_shared,string $route)
     {
         $files->templatedir = __DIR__;
         $files->templatedir_shared = $templatedir_shared;
         $this->rootdir = $storagedir . $ctx->user() . '/uploads/';
         $this->outHelperAttributes([
-          'ROUTE' => '/memo',
+          'ROUTE' => $route,
           'PATH' => '/' . $ctx->request()->path()->getString()
         ]);
     }
