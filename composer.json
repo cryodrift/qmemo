@@ -3,7 +3,7 @@
     "description": "Quick memo and note-taking module with simple web UI.",
     "type": "library",
     "license": "MIT",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "authors": [
         {
             "name": "chrisg"
